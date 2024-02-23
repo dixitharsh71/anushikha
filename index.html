@@ -553,12 +553,13 @@
     overflow: hidden;
     scroll-behavior: smooth;
   }
+  
   .wrapper section {
     width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    margin: 20px 0;
+    margin:  0 auto;
   }
   .wrapper section .item {
     /* width: max-content; */
@@ -593,11 +594,11 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
   }
   .wrapper{
-    <width:100%;
-    max-width:400px;
-    margin:0 auto 
+    <width:100%;/*Default width*/
+    max-width:400px;/*Maximum width*/
+    margin:0 auto /*Center the wrapper horizontally*/
     }
-    @media screen and {max-width: 600px;}{.wrapper}
+    @media screen and {max-width: 300px;}{.wrapper}
     {max width:300px/*Adjust width with smaller screens*/}
 
 
