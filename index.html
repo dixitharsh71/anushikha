@@ -556,10 +556,12 @@
   
   .wrapper section {
     width: 100%;
+    max-width: fit-content;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin:  0 auto;
+    size-adjust: 300px;
   }
   .wrapper section .item {
     /* width: max-content; */
@@ -598,11 +600,7 @@
     max-width:400px;/*Maximum width*/
     margin:0 auto /*Center the wrapper horizontally*/
     }
-    @media screen and {max-width: 300px;}{.wrapper}
-    {max width:300px/*Adjust width with smaller screens*/}
-    .wrapper 
-      @media screen and (max-width: 320px) {
-  /* Smaller Devices */
+    
   img{
     width: cover;
     max-width: 100%;
