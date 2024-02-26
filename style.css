@@ -40,7 +40,7 @@ body {
   }
   
   .title h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: Arial, Helvetica, sans-serif
     font-weight: bold;
     font-style: normal;
     font-size: 65px;
@@ -315,9 +315,14 @@ body {
     overflow: visible;
     scroll-behavior: smooth;
   }
-  ,.wrapper @media screen and (max-width:768px){
-    .slider{padding-top:102px;margin-top:0;}
-}
+  .wrapper.item
+  img{
+    max-width: 100%;
+    height: auto;
+    display:block
+  }
+
+
   .wrapper section {
     width: 100%;
     position: relative;
@@ -379,6 +384,9 @@ body {
       max-width: fit-content
     max-height:fit-content
     }
+  }
+  .wrapper.item{
+    /*style for mobile devices*/
   }
   
   .tile__img {
