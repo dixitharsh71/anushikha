@@ -342,6 +342,10 @@ body {
     text-align: center;
     z-index: 1;
   }
+  .mobile-image {display:none;}
+  mobile screen and (min width:540px){
+    .mobile-image {display:block;}
+  }
   @media only screen and {max width:
 600px}{
   /*style for mobile devices*/
