@@ -315,6 +315,9 @@ body {
     overflow: visible;
     scroll-behavior: smooth;
   }
+  ,.wrapper @media screen and (max-width:768px){
+    .slider{padding-top:102px;margin-top:0;}
+}
   .wrapper section {
     width: 100%;
     position: relative;
