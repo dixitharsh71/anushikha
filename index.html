@@ -152,20 +152,30 @@
       </div>
        
               <div class="wrapper">
+            
                <section id="section1">
+               
+                
                 
                  <div class="item">
-                  <img src="photo_2024-02-14_01-18-45.jpg" alt="Describe Image"> 
+                  <img src="photo_2024-02-14_01-18-45.jpg" class="img-fluid" alt="Responsive"> 
                 </div>
                  <div class="item">
-                 <img src="WhatsApp Image 2024-02-14 at 05.22.08_748b0a67.jpg" alt="Describe Image">
+                 <img src="WhatsApp Image 2024-02-14 at 05.22.08_748b0a67.jpg" class="img-fluid" alt="Responsive">
                </div>
                <div class="item">
-                <img src="WhatsApp Image 2024-02-14 at 05.22.08_56717fe3.jpg" alt="Describe Image">
+                <img src="WhatsApp Image 2024-02-14 at 05.22.08_56717fe3.jpg" class="img-fluid" alt="Responsive">
               </div>
                  <div class="item">
-                 <img src="WhatsApp Image 2024-02-14 at 05.22.09_a6d26827.jpg" alt="Describe Image">
+                 <img src="WhatsApp Image 2024-02-14 at 05.22.09_a6d26827.jpg"class="img-fluid" alt="Responsive">
+                 
+               
                </div>
+             
+               </style>
+               <STYle>
+                
+               </STYle>
                             
                <div class="item">
                  <img src="cvb.gif" alt="Describe Image">
@@ -232,7 +242,7 @@
 
 </html>
 <style>   body {
-    font-family: Arial,Helvetica, Sans-serif ;
+    font-family:cursive;
     background: linear-gradient(
       white,
       rgb(39, 152, 208),
@@ -243,7 +253,7 @@
   
   img {
     max-width: 100%;
-    height: auto;
+    height: fit-content;
   }
   
   @media (max-width: 900px) {
@@ -273,7 +283,7 @@
   }
   
   .title h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: "arial", cursive;
     font-weight: bold;
     font-style: normal;
     font-size: 65px;
@@ -387,7 +397,7 @@
     display: flex;
     /* grid-template-columns: 1fr 1fr; */
     border-radius: 10px;
-    overflow: visible;
+    overflow: hidden;
   }
   
   .block {
@@ -484,7 +494,7 @@
     letter-spacing: 0pt;
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .video-container {
       overflow: hidden;
       position: relative;
@@ -508,14 +518,14 @@
     .block {
       width: 90px;
       height: 80px;
-      /* display: grid; */ visibility:visible
+      /* display: grid; */
       font-size: 16px;
     }
   }
   
   @media only screen and (max-width: 400px) {
     .video-container {
-      overflow: visible;
+      overflow: hidden;
       position: relative;
       width: 100%;
     }
@@ -543,17 +553,20 @@
   }
   
   .wrapper {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 100%);
-    overflow: visible;
+    overflow: hidden;
     scroll-behavior: smooth;
   }
+  
   .wrapper section {
     width: 100%;
+    max-width: fit-content;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    margin: 20px 0;
+    margin:  0 auto;
+    size-adjust: 300px;
   }
   .wrapper section .item {
     /* width: max-content; */
@@ -587,6 +600,26 @@
     right: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
   }
+  .wrapper{
+    <width:100%;/*Default width*/
+    max-width:400px;/*Maximum width*/
+    margin:0 auto /*Center the wrapper horizontally*/
+    }
+    
+  img{
+    width: cover;
+    max-width: 100%;
+    height: cover;
+  }
+    }
+    .wrapper{
+      .artemis-logo-mobile {display: none;}
+      @media screen and [max-width:320px]{.artemis-logo-mobile display: inline block;}
+    }
+
+
+  
+  
   
   @media only screen and (max-width: 600px) {
     a.arrow__btn {
@@ -597,7 +630,7 @@
     }
   
     .wrapper section .item {
-      max-width: fit-content%;
+      max-width: 100%;
     }
   }
   
