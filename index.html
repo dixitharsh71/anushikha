@@ -157,20 +157,42 @@
                
                 
                 
-                 <div class="item">
-                  <img src="photo_2024-02-14_01-18-45.jpg" class="img-fluid" alt="Responsive"> 
-                </div>
-                 <div class="item">
-                 <img src="WhatsApp Image 2024-02-14 at 05.22.08_748b0a67.jpg" class="img-fluid" alt="Responsive">
-               </div>
-               <div class="item">
-                <img src="WhatsApp Image 2024-02-14 at 05.22.08_56717fe3.jpg" class="img-fluid" alt="Responsive">
-              </div>
-                 <div class="item">
-                 <img src="WhatsApp Image 2024-02-14 at 05.22.09_a6d26827.jpg"class="img-fluid" alt="Responsive">
-                 
-               
-               </div>
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Responsive Images</title>
+                  <style>
+                    .item img {
+                      max-width: 100%; /* Ensure images don't exceed their container's width */
+                      height: auto; /* Maintain aspect ratio */
+                    }
+                  
+                    /* Media query for screens smaller than 576px (typical mobile phones) */
+                    @media (max-width: 575.98px) {
+                      .item img {
+                        /* Adjust image styles for smaller screens */
+                        max-width: 100%;
+                        height: auto;
+                      }
+                    }
+                  </style>
+                  </head>
+                  <body>
+                  
+                  <div class="item">
+                    <img src="photo_2024-02-14_01-18-45.jpg" class="img-fluid" alt="Responsive"> 
+                  </div>
+                  <div class="item">
+                    <img src="WhatsApp Image 2024-02-14 at 05.22.08_748b0a67.jpg" class="img-fluid" alt="Responsive">
+                  </div>
+                  <div class="item">
+                    <img src="WhatsApp Image 2024-02-14 at 05.22.08_56717fe3.jpg" class="img-fluid" alt="Responsive">
+                  </div>
+                  <div class="item">
+                    <img src="WhatsApp Image 2024-02-14 at 05.22.09_a6d26827.jpg" class="img-fluid" alt="Responsive">
+                  </div>
+                  
+                  </body>
              
                </style>
                <STYle>
